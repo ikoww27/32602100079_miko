@@ -1,0 +1,177 @@
+ERROR - 2023-07-09 03:56:07 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\xampp\htdocs\tugaswebprograming\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\tugaswebprograming\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ma...', 0)
+#1 C:\xampp\htdocs\tugaswebprograming\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 C:\xampp\htdocs\tugaswebprograming\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 C:\xampp\htdocs\tugaswebprograming\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 C:\xampp\htdocs\tugaswebprograming\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\tugaswebprograming\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\tugaswebprograming\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\tugaswebprograming\app\Controllers\Admin.php(39): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\tugaswebprograming\system\CodeIgniter.php(934): App\Controllers\Admin->storeMahasiswa()
+#9 C:\xampp\htdocs\tugaswebprograming\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\xampp\htdocs\tugaswebprograming\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\tugaswebprograming\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\tugaswebprograming\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-07-09 03:56:07 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `mahasiswa` (`nama`, `jurusan`, `semester`) VALUES (\'wes\', \'qe\', \'2\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mahasiswa` (`nama`, `jurusan`, `semester`) VALUES (\'wes\', \'qe\', \'2\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mahasiswa` (`nama`, `jurusan`, `semester`) VALUES (\'wes\', \'qe\', \'2\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mahasiswa` (`nama`, `jurusan`, `semester`) VALUES (:nama:, :jurusan:, :semester:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Admin.php(39): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->storeMahasiswa()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\tugaswebprograming\\public\\index.php')
+CRITICAL - 2023-07-09 05:16:40 --> Class 'App\Models\TeamModel' not found
+in APPPATH\Controllers\Admin.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->team()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\tugaswebprograming\\public\\index.php')
+CRITICAL - 2023-07-09 05:17:24 --> Class 'App\Models\PemainModel' not found
+in APPPATH\Controllers\Admin.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->pemain()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\tugaswebprograming\\public\\index.php')
+CRITICAL - 2023-07-09 05:20:53 --> Class 'App\Controllers\PemainaModel' not found
+in APPPATH\Controllers\Admin.php on line 54.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->updatePemain('3')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\tugaswebprograming\\public\\index.php')
+CRITICAL - 2023-07-09 05:21:03 --> Class 'App\Controllers\PemainaModel' not found
+in APPPATH\Controllers\Admin.php on line 67.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->deletePemain('3')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\tugaswebprograming\\public\\index.php')
+CRITICAL - 2023-07-09 05:21:06 --> Class 'App\Controllers\PemainaModel' not found
+in APPPATH\Controllers\Admin.php on line 67.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->deletePemain('3')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\tugaswebprograming\\public\\index.php')
+CRITICAL - 2023-07-09 05:21:31 --> Class 'App\Controllers\PemainaModel' not found
+in APPPATH\Controllers\Admin.php on line 54.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->updatePemain('3')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\tugaswebprograming\\public\\index.php')
+CRITICAL - 2023-07-09 05:21:39 --> Class 'App\Controllers\PemainaModel' not found
+in APPPATH\Controllers\Admin.php on line 67.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->deletePemain('3')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\tugaswebprograming\\public\\index.php')
+CRITICAL - 2023-07-09 05:25:25 --> Class 'App\Controllers\PemainaModel' not found
+in APPPATH\Controllers\Admin.php on line 54.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->updatePemain('3')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\tugaswebprograming\\public\\index.php')
+CRITICAL - 2023-07-09 05:53:20 --> Class 'App\Controllers\PemainaModel' not found
+in APPPATH\Controllers\Admin.php on line 54.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->updatePemain('3')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\tugaswebprograming\\public\\index.php')
+CRITICAL - 2023-07-09 05:56:03 --> Class 'App\Controllers\PemainaModel' not found
+in APPPATH\Controllers\Admin.php on line 67.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->deletePemain('3')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\tugaswebprograming\\public\\index.php')
+CRITICAL - 2023-07-09 10:51:04 --> Class 'App\Models\PemainModel' not found
+in APPPATH\Controllers\Admin.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->pemain()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\tugaswebprograming\\public\\index.php')
+CRITICAL - 2023-07-09 10:52:16 --> Class 'App\Models\TeamModel' not found
+in APPPATH\Controllers\Admin.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->team()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\tugaswebprograming\\public\\index.php')
+CRITICAL - 2023-07-09 10:52:23 --> Class 'App\Models\TeamModel' not found
+in APPPATH\Controllers\Admin.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->team()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\tugaswebprograming\\public\\index.php')
+CRITICAL - 2023-07-09 12:23:02 --> Class 'App\Models\PemainModel' not found
+in APPPATH\Controllers\Admin.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->pemain()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\tugaswebprograming\\public\\index.php')
+CRITICAL - 2023-07-09 12:31:19 --> Trying to access array offset on value of type null
+in APPPATH\Views\edit_pemain.php on line 12.
+ 1 APPPATH\Views\edit_pemain.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\tugaswebprograming\\app\\Views\\edit_pemain.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\tugaswebprograming\\app\\Views\\edit_pemain.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('edit_pemain', [], true)
+ 5 APPPATH\Controllers\Admin.php(49): view('edit_pemain', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->editPemain('4')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\tugaswebprograming\\public\\index.php')
+CRITICAL - 2023-07-09 12:31:22 --> Trying to access array offset on value of type null
+in APPPATH\Views\edit_pemain.php on line 12.
+ 1 APPPATH\Views\edit_pemain.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\tugaswebprograming\\app\\Views\\edit_pemain.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\tugaswebprograming\\app\\Views\\edit_pemain.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('edit_pemain', [], true)
+ 5 APPPATH\Controllers\Admin.php(49): view('edit_pemain', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->editPemain('4')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\tugaswebprograming\\public\\index.php')
+CRITICAL - 2023-07-09 12:37:23 --> Trying to access array offset on value of type null
+in APPPATH\Views\edit_pemain.php on line 12.
+ 1 APPPATH\Views\edit_pemain.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\tugaswebprograming\\app\\Views\\edit_pemain.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\tugaswebprograming\\app\\Views\\edit_pemain.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('edit_pemain', [], true)
+ 5 APPPATH\Controllers\Admin.php(49): view('edit_pemain', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->editPemain('4')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\tugaswebprograming\\public\\index.php')
+CRITICAL - 2023-07-09 12:38:16 --> Trying to access array offset on value of type null
+in APPPATH\Views\edit_pemain.php on line 12.
+ 1 APPPATH\Views\edit_pemain.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\tugaswebprograming\\app\\Views\\edit_pemain.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\tugaswebprograming\\app\\Views\\edit_pemain.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('edit_pemain', [], true)
+ 5 APPPATH\Controllers\Admin.php(49): view('edit_pemain', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->editPemain('4')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\tugaswebprograming\\public\\index.php')
